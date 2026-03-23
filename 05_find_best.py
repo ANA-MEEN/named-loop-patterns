@@ -18,7 +18,9 @@ def find_max(lst):
     """Return the largest integer in lst."""
     best = lst[0]
     for item in lst:
-        pass  # if item beats best, update best
+        if int(item) > int(best):
+            best = item
+        # if item beats best, update best
     return best
 
 
@@ -29,7 +31,8 @@ def find_min_char(lst):
     """
     best = lst[0]
     for item in lst:
-        pass  # if item beats best, update best
+        if ord(item) < ord(best):
+            best = item
     return best
 
 
