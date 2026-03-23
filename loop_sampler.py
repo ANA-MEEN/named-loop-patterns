@@ -17,7 +17,8 @@ def find_big(lst):
     """Return the largest value in lst."""
     best = lst[0]
     for item in lst:
-        pass  # if item beats best, update best
+        if int(item) > int(best):
+            best = item
     return best
 
 
@@ -33,7 +34,8 @@ def find_small(lst):
     """Return the smallest character in lst."""
     best = lst[0]
     for item in lst:
-        pass  # if item beats best, update best
+        if ord(item) < ord(best):
+            best = item
     return best
 
 
@@ -51,7 +53,8 @@ def find_big_idx(lst):
     """Return the index of the largest value in lst."""
     best_idx = 0
     for idx, item in enumerate(lst):
-        pass  # if item beats lst[best_idx], update best_idx
+        if int(item) > int(lst[best_idx]):
+            best_idx = idx
     return best_idx
 
 
@@ -66,7 +69,8 @@ def find_small_idx(lst):
     """Return the index of the smallest character in lst."""
     best_idx = 0
     for idx, item in enumerate(lst):
-        pass  # if item beats lst[best_idx], update best_idx
+        if ord(item) < ord(lst[best_idx]):
+            best_idx = idx
     return best_idx
 
 

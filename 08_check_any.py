@@ -20,7 +20,7 @@ def any_negative(lst):
     """Return True if at least one integer in lst is negative."""
     for item in lst:
         if item < 0:
-            return False
+            return True
     return False
 
 
